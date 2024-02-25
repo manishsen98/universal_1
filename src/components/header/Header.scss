@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgb(12 16 35 / 33%);
+  background-color: transparent;
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@
 }
 
 .navbar-items li a {
-  color: rgb(97, 85, 85);
+  color: black;
   text-transform: capitalize;
 }
 

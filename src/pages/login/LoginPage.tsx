@@ -1,8 +1,7 @@
 import "./LoginPage.scss";
 
-type Props = {};
 
-const LoginPage = (props: Props) => {
+const LoginPage = () => {
   return <div>LoginPage</div>;
 };
 
