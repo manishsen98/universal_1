@@ -1,0 +1,16 @@
+.social-icons {
+  font-size: 2rem;
+  .icon {
+    margin: 0 1rem 0 1rem;
+    color: white;
+    a svg {
+      transition: all ease-in 0.3s;
+    }
+    &:hover {
+      a svg {
+        color: red;
+        transform: scale(1.5);
+      }
+    }
+  }
+}

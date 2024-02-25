@@ -1,0 +1,105 @@
+@import "../../mixin.scss";
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-image: url("/footer.jpg");
+  &-cols {
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &--col-1 {
+      text-align: center;
+      img {
+        width: 10rem;
+        margin-bottom: 5rem;
+      }
+    }
+    &--col {
+      text-align: center;
+      h3 {
+        font-size: 2.5rem;
+        color: white;
+        font-family: monospace;
+      }
+      &-links {
+        margin-top: 2rem;
+        list-style: none;
+      }
+      .info {
+        color: white;
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+        address {
+          width: 40%;
+        }
+        li {
+          @include flexCenter(1rem);
+        }
+      }
+      a {
+        font-size: 2rem;
+        color: lightgray;
+        transition: all ease-in-out 0.3s;
+        &:hover {
+          color: red;
+          font-size: 2.3rem;
+        }
+      }
+      .inputs {
+        width: 120%;
+        margin-top: 5rem;
+        background-color: #1c1c21;
+        border-radius: 100px;
+        padding: 0.3rem;
+        input {
+          &:focus {
+            outline: none;
+          }
+          border-radius: 12px;
+          height: calc(100% + 1.5rem);
+          width: 80%;
+          background-color: transparent;
+          border: none;
+          padding: 2rem;
+          font-size: 1.5rem;
+        }
+        button {
+          font-size: 2rem;
+          background-color: red;
+          border: none;
+          text-align: center;
+          border-radius: 100px;
+          cursor: pointer;
+          padding: 2rem;
+          height: 100%;
+          width: 20%;
+          transition: all ease-in-out 0.3s;
+          &:active {
+            background-color: darkred;
+          }
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: darkgray;
+    background-color: #0000008a;
+    a:hover {
+      font-size: 2.1rem;
+      color: beige;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.navbar {
+  background-color: rgb(12 16 35 / 33%);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  align-items: center;
+  font-family: sans-serif;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adding a 3D shadow effect */
+}
+.logo {
+  img {
+    width: 8rem;
+  }
+}
+
+.navbar-items {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+.navbar-item {
+  cursor: pointer;
+}
+
+.navbar-items li a {
+  color: rgb(97, 85, 85);
+  text-transform: capitalize;
+}
+
+.button {
+  button {
+    border: 2px solid #c8416a;
+    background-color: transparent;
+    padding: 1.6rem 3.3rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      background-color: #c8416a;
+      color: wheat;
+    }
+  }
+}
+
+.navbar .active {
+  color: #c8416a;
+  font-size: 1.8rem;
+}
