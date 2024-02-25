@@ -3,6 +3,7 @@ import "./Home.scss"
 
 const Home = () => {
   return (
+
    <>
     <div className="main">
       <video className="video" autoFocus autoPlay  loop>
@@ -24,6 +25,38 @@ const Home = () => {
          </div>
      </div>
     </div>
+
+    {/* our servies section */}
+    <div className="main-bg-services">
+       <h1> Our Servies </h1>
+       <div className="our-Services-section">
+        <img src="serviesImg23.png" className="our-Services-section-img" />
+        <div className="card-main-container">
+          <div className="card-container">
+            {/* card 1 */}
+            <div className="card">
+              <img src="//universalchanakya.com/wp-content/uploads/2023/04/vastu-e1681134359461.png" />
+            </div>
+      
+          <div className="card">
+              <img src="//universalchanakya.com/wp-content/uploads/2023/04/numerology-e1681134497453.png" />
+            </div>
+          </div>
+
+          <div className="card-container">
+            {/* card 1 */}
+            <div className="card">
+              <img src="//universalchanakya.com/wp-content/uploads/2023/04/fengshui-e1681134683446.png" />
+            </div>
+      
+          <div className="card">
+              <img src="//universalchanakya.com/wp-content/uploads/2023/04/academy-e1681134828161.png" />
+            </div>
+          </div>
+          </div>
+          
+   </div>
+   </div>
     </>
   );
 };

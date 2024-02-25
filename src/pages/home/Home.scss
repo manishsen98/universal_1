@@ -47,7 +47,7 @@
 .opcity{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.151);
     h1{
         text-align: center;
         color:azure;
@@ -106,5 +106,54 @@
             font-weight: bold;
             margin-left: 0px;
         }
+    }
+}
+
+//  our servies section
+.main-bg-services{
+    background-color: #4a665a;
+    background-size: cover;
+    height: 120vh;
+    h1{
+        text-align:center;
+        font-weight: bold;
+        color: grey;
+        font-size: 5rem;
+        padding-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.our-Services-section{
+   
+    @include sm{
+        display: flex;
+        justify-content: space-around;
+    }
+    .our-Services-section-img{
+        @include sm {
+            width: 400px;
+            height: 500px;
+            border-radius: 8px;
+        }
+    }
+    
+}
+
+.card-main-container{
+    @include sm{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+.card-container{
+    @include sm{
+        display: flex;
+        margin-top: 20px;
+    }
+    .card{
+        margin-left: 20px;
     }
 }
