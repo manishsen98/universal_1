@@ -1,3 +1,6 @@
+@import "../../mixin.scss";
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+
 .video{
     width: 100vw;
     position: absolute;
@@ -10,4 +13,98 @@
 
 .main{
     height: 100vh;
+}
+
+.custom-shape-divider-top-1708861069 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1708861069 svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-top-1708861069 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.owner-section{
+    height: 125vh;
+    position: relative;
+    background-image: url("/public/ownerBgImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opcity{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    h1{
+        text-align: center;
+        color:azure;
+        font-size: 4rem;
+        padding-top: 4rem;
+        @include sm{
+        font-size: 4rem;
+    }
+    }
+    
+}
+.white-hr {
+    border-top: 1px solid white;
+    width: 40%;
+  }
+
+.img-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    @include sm {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    } 
+}
+
+
+.owner-text-section{
+    margin-top: 40px;
+    margin-left: 30px;  
+   h3{
+    font-size: 3.5rem;
+    font-family: "El Messiri", sans-serif;
+
+   }
+   p{
+    font-size: 2.3rem;
+    margin-top: 30px;
+    margin-left: 20px;
+   }
+   h4{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-left: 25px;
+    padding-top: 30px;
+   }
+    @include sm {  
+        p{
+            width: 600px;
+            font-size: 2rem;      
+        }
+        h4{
+            color: #FFFFFF;
+            font-weight: bold;
+            margin-left: 0px;
+        }
+    }
 }
