@@ -1,0 +1,31 @@
+@import "./mixin.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 5px;
+  @include ssm {
+    font-size: 6px;
+  }
+  @include sm {
+    font-size: 7px;
+  }
+  @include md {
+    font-size: 8px;
+  }
+  @include lg {
+    font-size: 10px;
+  }
+  @include xl {
+    font-size: 11px;
+  }
+  @include xxl {
+    font-size: 13px;
+  }
+}
