@@ -1,3 +1,6 @@
+@import "../../mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+
 .video {
   width: 100vw;
   position: absolute;
@@ -10,4 +13,140 @@
 
 .main {
   height: 100vh;
+}
+
+.custom-shape-divider-top-1708861069 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1708861069 svg {
+  position: relative;
+  display: block;
+  width: calc(158% + 1.3px);
+  height: 500px;
+}
+
+.custom-shape-divider-top-1708861069 .shape-fill {
+  fill: #ffffff;
+}
+
+.owner-section {
+  height: 125vh;
+  position: relative;
+  background-image: url("/public/ownerBgImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opcity {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.151);
+  h1 {
+    text-align: center;
+    color: azure;
+    font-size: 4rem;
+    padding-top: 4rem;
+    @include sm {
+      font-size: 4rem;
+    }
+  }
+}
+.white-hr {
+  border-top: 1px solid white;
+  width: 40%;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7%;
+  @include sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.owner-text-section {
+  margin-top: 40px;
+  margin-left: 30px;
+  h3 {
+    font-size: 3.5rem;
+    font-family: "El Messiri", sans-serif;
+  }
+  p {
+    font-size: 2.3rem;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  h4 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-left: 25px;
+    padding-top: 30px;
+  }
+  @include sm {
+    p {
+      width: 600px;
+      font-size: 2rem;
+    }
+    h4 {
+      color: #ffffff;
+      font-weight: bold;
+      margin-left: 0px;
+    }
+  }
+}
+
+//  our servies section
+.main-bg-services {
+  background-color: #4a665a;
+  background-size: cover;
+  height: 120vh;
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+    font-size: 5rem;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.our-Services-section {
+  @include sm {
+    display: flex;
+    justify-content: space-around;
+  }
+  .our-Services-section-img {
+    @include sm {
+      width: 400px;
+      height: 500px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.card-main-container {
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+.card-container {
+  @include sm {
+    display: flex;
+    margin-top: 20px;
+  }
+  .card {
+    margin-left: 20px;
+  }
 }
