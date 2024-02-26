@@ -10,7 +10,7 @@ const Footer = () => {
     animateScroll.scrollToTop({ duration: 300, smooth: "easeInOutQuad" });
   };
   return (
-    <section className="footer">
+    <section className="footer main">
       <div className="footer-cols">
         <div className="footer-cols--col-1">
           <img src="/logo.png" alt="NLP Dubai" />

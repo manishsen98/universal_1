@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { ChanakyaData, NumerologyData, VastuData } from "../../Services";
 import Card from "../../components/card/Card";
 import "./OtherPage.scss";
+import { AnimatePresence } from "framer-motion";
 
 const OtherPage = () => {
   const { route } = useParams();
@@ -14,8 +15,8 @@ const OtherPage = () => {
       : ChanakyaData;
 
   return (
-    <div className="nav-pages">
-      <div className="section-poster">
+    <div className="nav-pages main">
+      <div className="section-poster main">
         <div className="container">
           <img src={`/${ShowData.main_image}`} alt="image" />
           <div className="text">
@@ -27,7 +28,7 @@ const OtherPage = () => {
         </div>
       </div>
 
-      <div className="section-cards">
+      <div className="section-cards main">
         <div className="cards-container">
           <div className="cards">
             {ShowData.cards.map((item) => (

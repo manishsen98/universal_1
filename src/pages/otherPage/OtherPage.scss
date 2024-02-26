@@ -1,6 +1,8 @@
 @import "../../mixin.scss";
 .nav-pages {
   background-image: linear-gradient(100deg, cyan, blue);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   .section-poster {
     background-image: url("/bg2.jpg");
     background-size: cover;
@@ -74,6 +76,7 @@
         @include lg {
           display: grid;
           grid-template-columns: 50% 50%;
+          grid-template-rows: 100vh;
         }
         @include xl {
           grid-template-columns: 33% 33% 33%;

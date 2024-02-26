@@ -1,5 +1,4 @@
 .navbar {
-  background-color: transparent;
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -7,84 +6,83 @@
   align-items: center;
   font-family: sans-serif;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adding a 3D shadow effect */
-}
-.logo {
-  img {
-    width: 8rem;
+  width: 100%;
+  transition: all ease 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  &-top {
+    background: transparent;
   }
-}
-
-.navbar-items {
-  display: flex;
-  gap: 3rem;
-  list-style: none;
-}
-.navbar-item {
-  cursor: pointer;
-}
-
-.navbar-items li a {
-  color: white;
-  text-transform: capitalize;
-}
-.navbar-items li {
-  position: relative;
-  text-transform: capitalize;
-  border: none;
-
-  &:hover {
-    .link-dropdown {
-      transform: scaleY(1);
+  &-show {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    // transform: translateY(0px);
+  }
+  &-hide {
+    transform: translateY(-100%) !important;
+  }
+  .logo {
+    img {
+      width: 8rem;
     }
   }
 
-  .link-dropdown {
-    transform-origin: 0 0;
-    background-color: #8b1515;
-    position: absolute;
-    transform: scaleY(0);
+  .navbar-items {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-weight: 500;
-    top: calc(100% + 3.5rem);
-    left: 0;
-    width: 21rem;
-    transition: all ease-in-out 0.3s;
-    &:hover {
-      transform: scaleY(1);
-    }
-    &-item {
-      transition: all ease-in-out 0.3s;
+    gap: 3rem;
+    list-style: none;
+  }
+  .navbar-item {
+    cursor: pointer;
+  }
 
-      padding: 1rem;
+  .navbar-items li a {
+    color: rgb(61, 58, 58);
+    text-transform: capitalize;
+  }
+  .navbar-items li {
+    position: relative;
+    text-transform: capitalize;
+    border: none;
+
+    &:hover {
+      .link-dropdown {
+        transform: scaleY(1);
+      }
+    }
+
+    .link-dropdown {
+      transform-origin: 0 0;
+      background-color: #bbbbbba2;
+      position: absolute;
+      transform: scaleY(0);
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      font-size: 1.5rem;
+      font-weight: 500;
+      top: calc(100% + 3.5rem);
+      left: 0;
+      width: 21rem;
+      transition: all ease-in-out 0.3s;
       &:hover {
-        color: red;
-        font-size: 1.6rem;
+        transform: scaleY(1);
+      }
+      &-item {
+        transition: all ease-in-out 0.3s;
+
+        padding: 1rem;
+        &:hover {
+          color: red;
+          font-size: 1.6rem;
+        }
       }
     }
   }
 }
-
-.button {
-  button {
-    border: 2px solid #c8416a;
-    background-color: transparent;
-    padding: 1.6rem 3.3rem;
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: 0.3s all ease-in-out;
-    &:hover {
-      background-color: #c8416a;
-      color: wheat;
-    }
-  }
-}
-
 .navbar .active {
   color: #c8416a;
   font-size: 1.8rem;

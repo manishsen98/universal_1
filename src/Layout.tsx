@@ -14,6 +14,9 @@ const Layout = () => {
       <footer>
         <Footer />
       </footer>
+      <div className="button">
+        <button>Book a consultation now</button>
+      </div>
     </>
   );
 };
