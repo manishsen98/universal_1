@@ -24,8 +24,48 @@
 }
 
 .navbar-items li a {
-  color: black;
+  color: white;
   text-transform: capitalize;
+}
+.navbar-items li {
+  position: relative;
+  text-transform: capitalize;
+  border: none;
+
+  &:hover {
+    .link-dropdown {
+      transform: scaleY(1);
+    }
+  }
+
+  .link-dropdown {
+    transform-origin: 0 0;
+    background-color: #8b1515;
+    position: absolute;
+    transform: scaleY(0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 500;
+    top: calc(100% + 3.5rem);
+    left: 0;
+    width: 21rem;
+    transition: all ease-in-out 0.3s;
+    &:hover {
+      transform: scaleY(1);
+    }
+    &-item {
+      transition: all ease-in-out 0.3s;
+
+      padding: 1rem;
+      &:hover {
+        color: red;
+        font-size: 1.6rem;
+      }
+    }
+  }
 }
 
 .button {

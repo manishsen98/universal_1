@@ -17,6 +17,23 @@ const Header = () => {
               return (
                 <li className="navbar-item">
                   <NavLink to={item.route}>{item.heading}</NavLink>
+                  {item.subheadings ? (
+                    <div className="link-dropdown">
+                      {item.subheadings.map((subitem, index) => {
+                        return (
+                          <NavLink
+                            className="link-dropdown-item"
+                            key={index}
+                            to={`${item.route}${subitem.route}`}
+                          >
+                            {subitem.heading}
+                          </NavLink>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </li>
               );
             })}

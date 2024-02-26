@@ -10,7 +10,7 @@ const NavData = [
   },
   {
     heading: "Services",
-    route: "/about",
+    route: "/services",
     subheadings: [
       {
         heading: "Vastu",
@@ -22,11 +22,11 @@ const NavData = [
       },
       {
         heading: "Feng Shui",
-        route: "/feng-shui",
+        route: "-feng-shui",
       },
       {
         heading: "Chankaya Academy",
-        route: "/chankaya-academy",
+        route: "/chankayaAcademy",
       },
     ],
   },
