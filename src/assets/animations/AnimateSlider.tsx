@@ -5,13 +5,15 @@ type Props = {
   width?: "fit-content" | "100%";
 };
 
-const AnimateText = ({ children, width = "fit-content" }: Props) => {
+const AnimateSlider = ({ children, width = "fit-content" }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   const mainControl = useAnimation();
+  const slideControl = useAnimation();
   useEffect(() => {
     if (isInView) {
       mainControl.start("visible");
+      slideControl.start("visible");
     }
   }, [isInView]);
 
@@ -22,12 +24,10 @@ const AnimateText = ({ children, width = "fit-content" }: Props) => {
           hidden: {
             opacity: 0,
             y: 100,
-            x: 100,
           },
           visible: {
             opacity: 1,
             y: 0,
-            x: 0,
           },
         }}
         initial="hidden"
@@ -36,8 +36,30 @@ const AnimateText = ({ children, width = "fit-content" }: Props) => {
       >
         {children}
       </motion.div>
+      <motion.div
+        variants={{
+          hidden: {
+            left: 0,
+          },
+          visible: {
+            left: 500,
+          },
+        }}
+        initial="hidden"
+        animate={slideControl}
+        transition={{ duration: 0.8, ease: "easeIn" }}
+        style={{
+          position: "absolute",
+          top: 4,
+          bottom: 4,
+          left: 0,
+          right: 0,
+          background: "red",
+          zIndex: 20,
+        }}
+      ></motion.div>
     </div>
   );
 };
 
-export default AnimateText;
+export default AnimateSlider;

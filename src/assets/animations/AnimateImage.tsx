@@ -5,7 +5,7 @@ type Props = {
   width?: "fit-content" | "100%";
 };
 
-const AnimateText = ({ children, width = "fit-content" }: Props) => {
+const AnimateImage = ({ children, width = "fit-content" }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   const mainControl = useAnimation();
@@ -21,13 +21,11 @@ const AnimateText = ({ children, width = "fit-content" }: Props) => {
         variants={{
           hidden: {
             opacity: 0,
-            y: 100,
-            x: 100,
+            scale: 0,
           },
           visible: {
+            scale: 1,
             opacity: 1,
-            y: 0,
-            x: 0,
           },
         }}
         initial="hidden"
@@ -40,4 +38,4 @@ const AnimateText = ({ children, width = "fit-content" }: Props) => {
   );
 };
 
-export default AnimateText;
+export default AnimateImage;

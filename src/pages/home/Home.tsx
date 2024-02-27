@@ -3,6 +3,7 @@ import "./Home.scss";
 import { useEffect, useState } from "react";
 import VideoText from "../../components/videoText/VideoText";
 import AnimateText from "../../assets/animations/AnimateText";
+import AnimateImage from "../../assets/animations/AnimateImage";
 const Home = () => {
   return (
     <>
@@ -12,9 +13,9 @@ const Home = () => {
           <h1>About The Happiness & Wealth Coach</h1>
           {/* <hr className="white-hr"  style={{textAlign: "center"}} /> */}
           <div className="img-text">
-            <AnimateText>
+            <AnimateImage>
               <img src="//universalchanakya.com/wp-content/uploads/2023/04/Untitled-design.jpg" />
-            </AnimateText>
+            </AnimateImage>
             <div className="owner-text-section">
               <AnimateText>
                 <h3> Krishna Prasadd Nair </h3>
