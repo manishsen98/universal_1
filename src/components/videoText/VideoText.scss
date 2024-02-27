@@ -1,0 +1,43 @@
+@import "../../mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=El+Messiri:wght@400..700&family=Fjalla+One&display=swap");
+.text-animate {
+  position: relative;
+  .content-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    b {
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      color: white;
+    }
+    .text {
+      width: 70vw;
+      background-color: #00000086;
+      .quote {
+        font-size: 3.3rem;
+        color: rgb(250, 110, 133);
+        font-family: "Anta", sans-serif;
+      }
+      .title {
+        max-width: 100%;
+        font-size: 2.4rem;
+        font-family: "Libre Franklin", "Arial";
+        color: #219bf1;
+        text-shadow: none;
+        line-height: 1.5;
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: none;
+        text-align: inherit;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -11,10 +11,6 @@
   z-index: -1;
 }
 
-.main {
-  height: 100vh;
-}
-
 .custom-shape-divider-top-1708861069 {
   position: absolute;
   top: 0;
@@ -36,7 +32,7 @@
 }
 
 .owner-section {
-  height: 125vh;
+  // height: 125vh;
   position: relative;
   background-image: url("/ownerBgImg.png");
   background-repeat: no-repeat;
@@ -109,7 +105,7 @@
 .main-bg-services {
   background-color: #4a665a;
   background-size: cover;
-  height: 120vh;
+  // height: 120vh;
   h1 {
     text-align: center;
     font-weight: bold;

@@ -10,6 +10,8 @@ a {
 }
 
 html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   font-size: 5px;
   @include ssm {
     font-size: 6px;
@@ -37,4 +39,44 @@ body {
 
 body {
   overflow-x: hidden;
+}
+
+.button {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  button {
+    border: 2px solid #c8416a;
+    background-color: #c841698e;
+    padding: 1.6rem 3.3rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+      background-color: #c8416a;
+      color: wheat;
+    }
+  }
+}
+
+.main {
+  height: 100vh;
+  scroll-snap-align: center;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: transparent; /* Make scrollbar handle transparent */
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: transparent; /* Make scrollbar handle transparent on hover */
+  }
 }
