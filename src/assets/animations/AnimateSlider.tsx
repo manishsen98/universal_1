@@ -47,7 +47,7 @@ const AnimateSlider = ({ children, width = "fit-content" }: Props) => {
         }}
         initial="hidden"
         animate={slideControl}
-        transition={{ duration: 0.8, ease: "easeIn" }}
+        transition={{ duration: 1.3, ease: "easeIn" }}
         style={{
           position: "absolute",
           top: 4,

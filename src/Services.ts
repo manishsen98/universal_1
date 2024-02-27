@@ -130,3 +130,75 @@ export const ChanakyaData = {
     },
   ],
 };
+
+export const AboutPageData = {
+  paragraphs: [
+    "Welcome to Universal Chanakya Vastu and Numerology Consulting Company, where we offer holistic solutions for your home, office, and personal well-being through the Ancient Indian sciences of Vastu Shastra and Numerology.",
+    "Vastu Shastra is an ancient Indian science that focuses on creating harmony between people and their physical environment. Vastu principles can help to enhance the flow of positive energy in a space, which can bring about greater happiness, success, wealth and prosperity.",
+    "Numerology, on the other hand, is the study of numbers and their influence on our lives. By understanding the numerological aspects of your life, you can make informed decisions and create a life of abundance and happiness.",
+    "At Universal Chanakya, we combine the principles of Vastu Shastra and Numerology to provide personalized solutions that align with your specific needs and goals.",
+    "Our team of expert consultants has a deep understanding of the principles of Vastu and can provide customized solutions and Advanced Vastu Remedies that are tailored to the specific needs of each client without Structural Changes and Demolition.",
+    "Our team of expert consultants has a deep understanding of the principles of Vastu and can provide customized solutions and Advanced Vastu Remedies that are tailored to the specific needs of each client without Structural Changes and Demolition.",
+    "We are based in Dubai for the past 15+ years and extending our Vastu and Numerology services across the Globe.",
+    "Our Vastu and Numerology Experts are available for On-site and Online Consultation.",
+  ],
+  quote:
+    "Trust us to help you create a space that is not only beautiful but also attractive to success, happiness, and abundance. Join us on this journey of self-discovery and transformation today! ",
+  TeamMemberData: [
+    {
+      id: 0,
+      name: "Krishna Prasadd Nair",
+      position: "",
+      paragraphs: [
+        "Krishna Prasadd Nair is a truly unique individual, a master in the mystical sciences of Vastu Shastra, Fengshui, and Numerology. Based in Dubai, he has dedicated the past 15 years of his life to the pursuit of these ancient arts.",
+        "As a Vastu Chanakya, Krishna possesses a deep understanding of Vastu Shastra and its profound impact on the energy of living and working spaces. Through his expertise, he has become a beacon of wealth, happiness, health, and success, spreading the light of positive vibrations wherever he goes.",
+      ],
+      extraText: [
+        "Krishna's clientele spans across various domains, including residential townhouses, commercial buildings, aviation institutes, and corporate establishments. His ability to tailor the principles of Vastu Shastra and Numerology to suit the unique needs of each client has earned him a reputation as a sought-after consultant.",
+        "With his keen insights and comprehensive knowledge, Krishna Prasadd Nair has transformed countless spaces into harmonious environments. He possesses a remarkable ability to identify imbalances and energy blockages, providing effective solutions to restore the flow of positive energy and enhance the overall well-being of his clients.",
+        "Apart from his expertise in Vastu Shastra, Krishna is also a skilled Fengshui practitioner. He understands the intricate balance between the elements and guides his clients in creating spaces that align with the universal forces of nature, promoting harmony, prosperity, and abundance.",
+        "In addition to his mastery of Vastu and Fengshui, Krishna Prasadd Nair is renowned as a celebrity numerologist. Through the power of numbers, he unveils hidden patterns and insights, providing invaluable guidance to his clients. His numerological readings offer profound clarity and enable individuals to make informed decisions in various aspects of their lives.",
+        "His unique blend of expertise in Vastu Shastra, Fengshui, and Numerology has made him a trusted and respected figure in the field of mystical sciences. His dedication to helping individuals and businesses thrive through the alignment of energies is unparalleled.",
+        "If you are seeking to transform your space, tap into your potential, and experience the profound impact of harmonized energies, Krishna Prasadd Nair's exceptional skills and guidance can lead you on a transformative journey towards success and fulfillment.",
+      ],
+    },
+    {
+      id: 1,
+      name: "Meenakshi",
+      position: "Vastu Consultant",
+      paragraphs: [
+        "Ms. Meenakshi is a Vastu consultant in Dubai. She specialises in healing living spaces, either at home or in the office, by balancing the energies in the existing layout of spaces, guiding the correct placement of objects, including the interiors of a room, selection of favourable colours and patterns.",
+      ],
+    },
+    {
+      id: 2,
+      name: "Lavanyaa Rajjendren",
+      position: "Intuitive Tarrot Card Expert & Clients Director",
+      paragraphs: [
+        "Lavanyaa is a highly skilled and intuitive individual who has made a name for herself as both an intuitive Tarot Card reader and a director of customer service. With her profound understanding of the mystical world and her exceptional customer service abilities, she has become a trusted expert in her field.",
+        "As an intuitive Tarot Card reader, Lavanyaa possesses a deep connection to the spiritual realm. She utilizes her keen intuition and expertise in interpreting tarot cards to provide valuable insights and guidance to her clients. With a remarkable ability to tap into the energies surrounding individuals, Lavanyaa assists them in gaining clarity, making informed decisions, and navigating various aspects of their lives.",
+        "In addition to her talents as a tarot card reader, Lavanyaa is also a seasoned professional in customer service. As a director in this field, she has honed her leadership skills and developed a profound understanding of customer needs and expectations. Lavanyaa is known for her exceptional ability to build strong relationships with clients, ensuring their satisfaction and creating a positive customer experience.",
+        "Lavanyaa's unique combination of intuitive abilities and customer service expertise sets her apart in both the mystical and professional realms. Her compassionate nature, coupled with her commitment to helping others, has garnered her a loyal client base who rely on her insights and trust her expertise.",
+        "Whether she is providing profound guidance through tarot readings or delivering exceptional customer service, Lavanyaa consistently strives to empower and uplift those she serves. With her unwavering dedication to her craft and her commitment to excellence, she continues to make a significant impact on the lives of her clients.",
+      ],
+    },
+    {
+      id: 3,
+      name: "Ashwathi Nair",
+      position: "Fengshui And Vastu Interior Designer",
+      paragraphs: [
+        "Ashwathi Nair is an accomplished Feng Shui and Vastu interior designer, known for her expertise in creating harmonious living spaces. With a deep understanding of energy flow principles, she combines Feng Shui and Vastu Shastra to transform homes and businesses into environments that promote well-being.",
+        "Ashwathi's keen eye for detail and aesthetics ensures every aspect of a space aligns with its occupants, enhancing positive energy flow. Her extensive experience allows her to tailor designs to clients' specific needs, incorporating their style while adhering to Feng Shui and Vastu principles. As a sought-after designer, Aswathy's ability to create extraordinary spaces has earned her trust and admiration. Collaborating with her through Universal Chanakya guarantees personalized, transformative interior design solutions that prioritize clients' well-being and success.",
+      ],
+    },
+    {
+      id: 4,
+      name: "Naveen Karthick",
+      position: "Civil Engineer with expertise in Vastu",
+      paragraphs: [
+        "Naveen Karthick is a highly skilled civil engineer specializing in Vastu Shastra. With a deep understanding of both disciplines, he creates well-designed structures that align with energy flow and harmony. Naveen's technical expertise ensures high-quality, functional buildings, while his incorporation of Vastu principles promotes positive energy flow. Clients value his attention to detail, problem-solving skills, and dedication to creating environments that enhance well-being. Naveen's blend of civil engineering and Vastu Shastra expertise adds value to residential, commercial, and public projects, resulting in harmonious spaces that foster prosperity.",
+        "Collaborating with Naveen guarantees a seamless integration of civil engineering and Vastu principles for balanced and prosperous environments.",
+      ],
+    },
+  ],
+};
