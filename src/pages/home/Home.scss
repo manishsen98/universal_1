@@ -38,7 +38,7 @@
 .owner-section {
   height: 125vh;
   position: relative;
-  background-image: url("/public/ownerBgImg.png");
+  background-image: url("/ownerBgImg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -148,5 +148,27 @@
   }
   .card {
     margin-left: 20px;
+  }
+}
+
+//  client card container
+
+.Clients-bg-section{
+  background-image: url("/ownerBgImg.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  .client-heading{
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+    font-size: 5rem;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    font-family: "El Messiri", sans-serif;
+  }
+  .client-headingh4{
+     text-align: center;
+     font-size: 2rem;
   }
 }

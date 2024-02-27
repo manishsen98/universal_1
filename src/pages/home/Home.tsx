@@ -67,6 +67,18 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+    {/* Clients-Are-Saying-section */}
+    <div className="Clients-bg-section">
+        <h1 className="client-heading">What Clients Are Saying</h1>
+        <h4 className="client-headingh4" > Testimonials That Speak Volumes! </h4>
+     <div className="client-cart-section">
+       <div className="client-section">
+          <img src="//universalchanakya.com/wp-content/uploads/2023/03/title-bg.jpg"/>
+          
+       </div>
+     </div>
+    </div>
     </>
   );
 };
