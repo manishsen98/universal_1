@@ -42,58 +42,75 @@ const Home = () => {
 
       {/* our servies section */}
       <div className=" main-bg-services h-[100vh]">
-      <div className="h-full flex justify-center items-center mr-[-5rem]">
-        <div className="flex">
-          <AnimateImage>
-          <img src="/our-ser.png" alt="Our Services"/></AnimateImage>
+        <div className="h-full flex flex-col gap-[5rem] sm:gap-0 sm:flex-row justify-center items-center mr-[-5rem]">
+          <div className="flex">
+            <AnimateImage>
+              <img src="/our-ser.png" alt="Our Services" />
+            </AnimateImage>
+          </div>
+          <div className="flex flex-col gap-20 sm:gap-12">
+            <AnimateFromRight>
+              <div className="item">
+                <img src="/serviesCardImg1.png" alt="" className="item-img" />
+                <div className="item-text">
+                  <h4>Vastu</h4>
+                  {/* <div className="color"></div> */}
+                </div>
+              </div>
+            </AnimateFromRight>
+            <AnimateFromRight>
+              <div className="item ml-0 sm:ml-[10rem] ">
+                <img
+                  src="/serviesCardImg2.png"
+                  alt=""
+                  className="item-img item-img2"
+                />
+                <div className="item-text">
+                  <h4> Numerology </h4>
+                  {/* <div className="color"></div> */}
+                </div>
+              </div>
+            </AnimateFromRight>
+            <AnimateFromRight>
+              <div className="item ml-0 sm:ml-[17rem] ">
+                <img
+                  src="/serviesCardImg3.png"
+                  alt=""
+                  className="item-img left-0"
+                />
+                <div className="item-text">
+                  <h4> Feng Shui </h4>
+                  {/* <div className="color"></div> */}
+                </div>
+              </div>
+            </AnimateFromRight>
+            <AnimateFromRight>
+              <div className="item ml-0 sm:ml-[10rem]">
+                <img
+                  src="/serviesCardImg4.png"
+                  alt=""
+                  className="item-img item-img2"
+                />
+                <div className="item-text text-right ">
+                  <h4 className="ml-[4rem]">Chanakya Academy </h4>
+                  {/* <div className="color"></div> */}
+                </div>
+              </div>
+            </AnimateFromRight>
+            <AnimateFromRight>
+              <div className="item">
+                <img src="/serviesCardImg5.png" alt="" className="item-img" />
+                <div className="item-text">
+                  <h4> Shop </h4>
+                  {/* <div className="color"></div> */}
+                </div>
+              </div>
+            </AnimateFromRight>
+          </div>
         </div>
-        <div className="flex flex-col gap-12">
-         <AnimateFromRight>
-          <div className="item">
-            <img src="/serviesCardImg1.png" alt="" className="item-img"/>
-            <div className="item-text">
-              <h4>Vastu</h4>
-              {/* <div className="color"></div> */}
-            </div>
-          </div></AnimateFromRight>
-        <AnimateFromRight>
-           <div className="item ml-[10rem] ">
-            <img src="/serviesCardImg2.png" alt="" className="item-img item-img2"/>
-            <div className="item-text">
-              <h4> Numerology </h4>
-              {/* <div className="color"></div> */}
-            </div>
-          </div></AnimateFromRight>
-         <AnimateFromRight>
-          <div className="item ml-[17rem] ">
-            <img src="/serviesCardImg3.png" alt="" className="item-img left-0"/>
-            <div className="item-text">
-              <h4> Feng Shui </h4>
-              {/* <div className="color"></div> */}
-            </div>
-          </div></AnimateFromRight>
-         <AnimateFromRight>
-          <div className="item ml-[10rem]">
-            <img src="/serviesCardImg4.png" alt="" className="item-img item-img2"/>
-            <div className="item-text text-right ">
-              <h4 className="ml-[4rem]">Chanakya Academy  </h4>
-              {/* <div className="color"></div> */}
-            </div>
-          </div></AnimateFromRight>
-        <AnimateFromRight>
-          <div className="item">
-            <img src="/serviesCardImg5.png" alt="" className="item-img"/>
-            <div className="item-text">
-              <h4> Shop </h4>
-              {/* <div className="color"></div> */}
-            </div>
-          </div></AnimateFromRight>
-        </div>
-      </div>
       </div>
 
-    {/* Clients-Are-Saying-section */}
-    
+      {/* Clients-Are-Saying-section */}
     </>
   );
 };
