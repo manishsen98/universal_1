@@ -1,26 +1,30 @@
 import { useState } from "react";
-import AnimateText from "../../assets/animations/AnimateText";
 import "./Card.scss";
+import AnimateSlider from "../../assets/animations/AnimateSlider";
+import AnimateImage from "../../assets/animations/AnimateImage";
+import AnimateText from "../../assets/animations/AnimateText";
 
 const Card = ({ heading, para, img }) => {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-    <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-  </a>
+    <div className="w-[50rem] h-[58rem]  md:max-w-md md:max-h-[40rem]  other-card bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+      <AnimateImage>
+    <img className="rounded-t-lg w-[90%] m-auto pt-[1rem] " src={`/${img}`} alt=""  />
+  </AnimateImage>
   <div className="p-5">
-    <a href="#">
-      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
+   <AnimateSlider>
+      <h5 className="mb-2 text-6xl md:text-[2rem]  font-bold tracking-tight text-gray-900 dark:text-white">
+        {heading}
       </h5>
-    </a>
-    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-      Here are the biggest enterprise technology acquisitions of 2021 so far, in
-      reverse chronological order.
-    </p>
-    <a
-      href="#"
-      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      </AnimateSlider>
+
+      <AnimateSlider>
+    <p className="mb-3 text-4xl md:text-2xl mt-10 font-normal text-gray-700 dark:text-gray-400">
+     {para}
+    </p></AnimateSlider>
+  <AnimateSlider>
+    <button
+     
+      className="inline-flex text-3xl mt-7  md:px-5 md:py-3 rounded-[5rem] items-center px-[5rem] py-[2rem]  font-medium text-center text-white bg-blue-700  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
     >
       Read more
       <svg
@@ -37,8 +41,8 @@ const Card = ({ heading, para, img }) => {
           strokeWidth={2}
           d="M1 5h12m0 0L9 1m4 4L9 9"
         />
-      </svg>
-    </a>
+      </svg> </button></AnimateSlider>
+    
   </div>
 </div>
 

@@ -2,8 +2,9 @@ import { useParams } from "react-router-dom";
 import { ChanakyaData, NumerologyData, VastuData } from "../../Services";
 import Card from "../../components/card/Card";
 import "./OtherPage.scss";
-import { AnimatePresence } from "framer-motion";
-
+import { AnimatePresence, motion } from "framer-motion";
+import AnimateImage from "../../assets/animations/AnimateImage";
+import AnimateText from "../../assets/animations/AnimateText";
 const OtherPage = () => {
   const { route } = useParams();
 
@@ -15,20 +16,37 @@ const OtherPage = () => {
       : ChanakyaData;
 
   return (
-    <div className="nav-pages main">
-      <div className="section-poster main">
+    <div className="nav-pages ">
+      <div className="section-poster">
         <div className="container">
-          <img src={`/${ShowData.main_image}`} alt="image" />
+          <motion.img  variants={{
+          hidden: {
+            opacity: 0,
+            scale: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+          },
+        }}
+        initial="hidden"
+        animate={"visible"}
+        transition={{ duration: 1.5, delay: 0.25 }} src={`/${ShowData.main_image}`} alt="image" />
+
           <div className="text">
             <div className="opacity">
+             <AnimateText>
               <h3>{ShowData.main_heading}</h3>
-              <p>{ShowData.main_paragraph}</p>
+              </AnimateText>
+              <AnimateText>
+              <p>{ShowData.main_paragraph}</p></AnimateText>
+              
             </div>
           </div>
         </div>
       </div>
 
-      <div className="section-cards main">
+      <div className="section-cards ">
         <div className="cards-container">
           <div className="cards">
             {ShowData.cards.map((item) => (

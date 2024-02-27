@@ -34,7 +34,7 @@ const VideoText = () => {
   }, [text]);
 
   return (
-    <div className="main text-animate">
+    <div className=" text-animate">
       <video className="video" autoFocus autoPlay loop>
         <source
           src="/Astrology Background - 19 - Trim.mkv.mp4"
