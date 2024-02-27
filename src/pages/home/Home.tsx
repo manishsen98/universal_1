@@ -5,6 +5,7 @@ import VideoText from "../../components/videoText/VideoText";
 import AnimateText from "../../assets/animations/AnimateText";
 import AnimateImage from "../../assets/animations/AnimateImage";
 import AnimateFromRight from "../../assets/animations/AnimateFromRight";
+import Review from "../../components/Review/Review";
 const Home = () => {
   return (
     <>
@@ -93,7 +94,7 @@ const Home = () => {
       </div>
 
     {/* Clients-Are-Saying-section */}
-    
+      <Review/>
     </>
   );
 };

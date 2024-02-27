@@ -3,6 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +55,7 @@ body {
   }
   button {
     border: 2px solid #c8416a;
-    background-color: #419fc8;
+    background-color: #c8416a;
     padding: 1.6rem 3.3rem;
     font-size: 1.5rem;
     text-transform: capitalize;
