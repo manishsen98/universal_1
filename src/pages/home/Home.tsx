@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import VideoText from "../../components/videoText/VideoText";
 import AnimateText from "../../assets/animations/AnimateText";
 import AnimateImage from "../../assets/animations/AnimateImage";
+import AnimateFromRight from "../../assets/animations/AnimateFromRight";
 const Home = () => {
   return (
     <>
@@ -40,47 +41,59 @@ const Home = () => {
       </div>
 
       {/* our servies section */}
-      <div className=" main-bg-services">
-        <h1> Our Servies </h1>
-        <div className="our-Services-section">
-          <img src="serviesImg23.png" className="our-Services-section-img" />
-          <div className="card-main-container">
-            <div className="card-container">
-              {/* card 1 */}
-              <div className="card">
-                <img src="//universalchanakya.com/wp-content/uploads/2023/04/vastu-e1681134359461.png" />
-              </div>
-
-              <div className="card">
-                <img src="//universalchanakya.com/wp-content/uploads/2023/04/numerology-e1681134497453.png" />
-              </div>
-            </div>
-
-            <div className="card-container">
-              {/* card 1 */}
-              <div className="card">
-                <img src="//universalchanakya.com/wp-content/uploads/2023/04/fengshui-e1681134683446.png" />
-              </div>
-
-              <div className="card">
-                <img src="//universalchanakya.com/wp-content/uploads/2023/04/academy-e1681134828161.png" />
-              </div>
-            </div>
-          </div>
+      <div className=" main-bg-services h-[100vh]">
+      <div className="h-full flex justify-center items-center mr-[-5rem]">
+        <div className="flex">
+          <AnimateImage>
+          <img src="/our-ser.png" alt="Our Services"/></AnimateImage>
         </div>
+        <div className="flex flex-col gap-12">
+         <AnimateFromRight>
+          <div className="item">
+            <img src="/serviesCardImg1.png" alt="" className="item-img"/>
+            <div className="item-text">
+              <h4>Vastu</h4>
+              {/* <div className="color"></div> */}
+            </div>
+          </div></AnimateFromRight>
+        <AnimateFromRight>
+           <div className="item ml-[10rem] ">
+            <img src="/serviesCardImg2.png" alt="" className="item-img item-img2"/>
+            <div className="item-text">
+              <h4> Numerology </h4>
+              {/* <div className="color"></div> */}
+            </div>
+          </div></AnimateFromRight>
+         <AnimateFromRight>
+          <div className="item ml-[17rem] ">
+            <img src="/serviesCardImg3.png" alt="" className="item-img left-0"/>
+            <div className="item-text">
+              <h4> Feng Shui </h4>
+              {/* <div className="color"></div> */}
+            </div>
+          </div></AnimateFromRight>
+         <AnimateFromRight>
+          <div className="item ml-[10rem]">
+            <img src="/serviesCardImg4.png" alt="" className="item-img item-img2"/>
+            <div className="item-text text-right ">
+              <h4 className="ml-[4rem]">Chanakya Academy  </h4>
+              {/* <div className="color"></div> */}
+            </div>
+          </div></AnimateFromRight>
+        <AnimateFromRight>
+          <div className="item">
+            <img src="/serviesCardImg5.png" alt="" className="item-img"/>
+            <div className="item-text">
+              <h4> Shop </h4>
+              {/* <div className="color"></div> */}
+            </div>
+          </div></AnimateFromRight>
+        </div>
+      </div>
       </div>
 
     {/* Clients-Are-Saying-section */}
-    <div className="Clients-bg-section">
-        <h1 className="client-heading">What Clients Are Saying</h1>
-        <h4 className="client-headingh4" > Testimonials That Speak Volumes! </h4>
-     <div className="client-cart-section">
-       <div className="client-section">
-          <img src="//universalchanakya.com/wp-content/uploads/2023/03/title-bg.jpg"/>
-          
-       </div>
-     </div>
-    </div>
+    
     </>
   );
 };

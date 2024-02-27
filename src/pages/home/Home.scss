@@ -103,7 +103,7 @@
 
 //  our servies section
 .main-bg-services {
-  background-color: #4a665a;
+  background-color: #6c938254;
   background-size: cover;
   // height: 120vh;
   h1 {
@@ -166,5 +166,44 @@
   .client-headingh4{
      text-align: center;
      font-size: 2rem;
+  }
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &-img{
+    z-index: 2;
+    position: absolute;
+    width: 80px;
+    left: 8rem;
+    height: 80px;
+    border-radius: 50%;
+    // margin-right: -2rem;
+  }
+  &-img2{
+    left: 3rem;
+
+  }
+  &-text{
+    // flex: 1;
+    margin-left: 2rem;
+    width: 200px;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 60px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: #0b60d9e0;
+    color: antiquewhite;
+    @include flexCenter(0);
+    font-family: "El Messiri", sans-serif;
+    .color{
+      height: 50px;
+      width: 20px;
+
+    }
   }
 }
