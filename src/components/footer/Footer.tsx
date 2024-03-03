@@ -14,7 +14,7 @@ const Footer = () => {
   };
   return (
     <section className="footer ">
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className=" dark:bg-gray-900">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <AnimateSlider>
             <div className="mb-6 md:mb-0">
@@ -34,7 +34,7 @@ const Footer = () => {
                     <li className="mb-4">
                       <Link
                         to="/"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-3`xl transition-all ease-in-out duration-700 md:text-2xl text-4xl"
                       >
                         Shop
                       </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
                     <li>
                       <Link
                         to="https://tailwindcss.com/"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-3`xl transition-all ease-in-out duration-700 md:text-2xl text-4xl"
                       >
                         Services
                       </Link>
@@ -50,7 +50,7 @@ const Footer = () => {
                     <li>
                       <Link
                         to="https://tailwindcss.com/"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-3`xl transition-all ease-in-out duration-700 md:text-2xl text-4xl"
                       >
                         Privacy Policy
                       </Link>
@@ -67,7 +67,7 @@ const Footer = () => {
                     <li className="mb-4">
                       <Link
                         to="https://github.com/themesberg/flowbite"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 text-4xl "
+                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-3xl transition-all ease-in-out duration-700  md:text-2xl text-4xl "
                       >
                         Home
                       </Link>
@@ -75,7 +75,7 @@ const Footer = () => {
                     <li>
                       <Link
                         to="https://discord.gg/4eeurUVvTy"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-3xl transition-all ease-in-out duration-700 md:text-2xl text-4xl"
                       >
                         About Us
                       </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
                     <li>
                       <Link
                         to="https://discord.gg/4eeurUVvTy"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-3xl transition-all ease-in-out duration-700 md:text-2xl text-2xl"
                       >
                         Contact Us
                       </Link>
@@ -93,14 +93,14 @@ const Footer = () => {
               </AnimateImage>
               <AnimateImage>
                 <div>
-                  <h2 className="mb-6 text-5xl md:text-4xl font-semibold text-gray-900 uppercase dark:text-white">
+                  <h2 className="mb-6 text-5xl md:text-3xl font-semibold text-gray-900 uppercase dark:text-white">
                     Contact Info
                   </h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                     <li className="mb-4">
                       <Link
                         to="#"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                        className="hover:underline hover:text-red-600 hover:text-3xl md:hover:text-1xl transition-all ease-in-out duration-700 md:text-2xl text-2xl"
                       >
                         Attrium Business Center - Business Attrium Building -
                         2nd Street - Dubai - United Arab Emirates
@@ -109,7 +109,7 @@ const Footer = () => {
                     <li>
                       <Link
                         to="#"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                        className="hover:underline hover:text-red-600 hover:text-3xl md:hover:text-1xl transition-all ease-in-out duration-700 md:text-2xl text-2xl"
                       >
                         +971 50 103 7666
                         <br />
@@ -119,7 +119,7 @@ const Footer = () => {
                     <li>
                       <Link
                         to="#"
-                        className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                        className="hover:underline hover:text-red-600 hover:text-3xl md:hover:text-1xl transition-all ease-in-out duration-700 md:text-2xl text-2xl"
                       >
                         info@universalchanakya.com
                       </Link>
@@ -131,13 +131,13 @@ const Footer = () => {
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-5xl text-gray-500 sm:text-center dark:text-gray-400">
-              © 2023{" "}
+            <span className="text-5xl md:text-2xl text-gray-500 sm:text-center dark:text-gray-400">
+              © 2024{" "}
               <Link
                 to="/"
-                className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-4xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
+                className="hover:underline hover:text-red-600 hover:text-5xl md:hover:text-1xl transition-all ease-in-out duration-700 md:text-3xl text-4xl"
               >
-                Flowbite™
+                Systos Technology™
               </Link>
               . All Rights Reserved.
             </span>

@@ -33,6 +33,7 @@ const Review = () => {
   return (
     <>
       <div className="p-5 review-container">
+        <div className="review-container-opcity">
         <h1 className="client-heading">What Clients Are Saying</h1>
         <div className="bg-container">
           <OwlCarousel className="owl-theme" {...options}>
@@ -40,7 +41,7 @@ const Review = () => {
                 <img style={{width:"50px", height:"50px"}} className="w-[3rem]" src="/person.webp" alt="Person" />
                 <div className="review-card-info">
                     <h2>CLIENT TESTIMONIAL</h2>
-                    <hr />
+                    <hr style={{ borderColor: "black", height: "2px " }} />
                     <p>
                       Best experience in the Vastu science, I have had a good change in my personal and professional life after following his recommendations which were very effective. I strongly suggest my friends and family to get the corrections done to see the best in their lives.</p>
                     <h3>  Karan J. Shrivastav </h3>
@@ -50,7 +51,7 @@ const Review = () => {
                 <img style={{width:"50px", height:"50px"}} className="w-[3rem]" src="/person.webp" alt="Person" />
                 <div className="review-card-info">
                     <h2>CLIENT TESTIMONIAL</h2>
-                    <hr />
+                    <hr style={{ borderColor: "black", height: "2px " }} />
                     <p> 
                    We have changed so many rented homes but never found that peace and prosperity in our life. Now our new home is fully backed with Vastu requirements and we are really seeing major positive changes and shifts in our energies and auras. Thank you Krishna for all your guidance and never ending support. Thank you from one of your happiest client.                                  </p>
                     <h3  > Amita J </h3>
@@ -60,7 +61,7 @@ const Review = () => {
                 <img style={{width:"50px", height:"50px"}} className="w-[3rem]" src="/person.webp" alt="Person" />
                 <div className="review-card-info">
                     <h2>CLIENT TESTIMONIAL</h2>
-                    <hr />
+                    <hr style={{ borderColor: "black", height: "2px " }} />
                     <p> I was looking for work in Dubai and recently received a fantastic position with a reputable organization. Mr. Krishna of Universal Chanakya helped make this all feasible. He provided guidance and assistance in implementing the Vastu requirements at my home, and things changed for the better. </p>
                     <h3>  Pooja Agarwal </h3>
                 </div>
@@ -68,6 +69,7 @@ const Review = () => {
           </OwlCarousel>
         </div>
       </div>
+      </div>   
     </>
   );
 };

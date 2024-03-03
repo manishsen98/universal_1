@@ -5,7 +5,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 2rem;
-  background-image: url("/footer.jpg");
+  // background-image: url("/footer1.png");
+  background-repeat: no-repeat;
+
   &-cols {
     background-color: rgba(0, 0, 0, 0.753);
     padding: 20px;
@@ -46,7 +48,7 @@
         }
       }
       a {
-        font-size: 2rem;
+        font-size: 1rem;
         color: lightgray;
         transition: all ease-in-out 0.3s;
         &:hover {
@@ -54,6 +56,8 @@
           font-size: 2.3rem;
         }
       }
+
+
       .inputs {
         width: 120%;
         margin-top: 5rem;

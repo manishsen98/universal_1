@@ -12,7 +12,7 @@ const Home = () => {
       <VideoText />
       <div className="owner-section">
         <div className="opacity">
-          <h1>About The Happiness & Wealth Coach</h1>
+          <h1 className="owner-section-heading">About The Happiness & Wealth Coach</h1>
           {/* <hr className="white-hr"  style={{textAlign: "center"}} /> */}
           <div className="img-text">
             <AnimateImage>
@@ -42,7 +42,8 @@ const Home = () => {
       </div>
 
       {/* our servies section */}
-      <div className=" main-bg-services h-[100vh]">
+      <div className=" main-bg-services">
+       <div className="servies-opcity">
         <div className="h-full flex flex-col gap-[5rem] sm:gap-0 sm:flex-row justify-center items-center mr-[-5rem]">
           <div className="flex">
             <AnimateImage>
@@ -108,6 +109,7 @@ const Home = () => {
               </div>
             </AnimateFromRight>
           </div>
+        </div>
         </div>
       </div>
 

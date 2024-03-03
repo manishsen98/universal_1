@@ -11,14 +11,20 @@
 }
 
 .review-container{
-    background-image: url("review-bg.webp");
+    background-image: url("/review-bg3.png");
     background-size: cover;
     height: 120vh;
-    margin: autos;
+    margin: auto;
     // @include flexCenter(1rem);
     .owl-item{
         @include flexCenter(5rem)
     }
+  }
+
+  .review-container-opcity{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.098);
   }
 
   .review-card{
@@ -33,8 +39,7 @@
         width: 30rem;
     }
     display: flex;
-    background-color: #00000084;
-    color: beige;
+    background-color: wheat;
     img{
         width: 1rem;margin: 1rem;
     }
@@ -42,6 +47,7 @@
         flex: 1;
         h2{
             font-size: 4.5rem;
+            color:brown;
             margin: 1rem;
             @include sm{
                 font-size: 3.1rem;
@@ -53,6 +59,8 @@
         p{
             font-size: 2.5rem;
             margin: 1rem;
+            color: black;
+            font-weight: 400;
             @include sm{
                 font-size: 1.7rem;
             }
@@ -63,6 +71,7 @@
         h3{
             font-size: 4rem;
             font-weight: bold;
+            color: brown;
             margin: 4rem 1rem;
             @include sm{
                 font-size: 3rem;
@@ -106,3 +115,9 @@
       right: -10px;
     }
   }
+
+  hr {
+    border: 0;
+    height: 2px;
+    background-color: black; /* Change to black */
+}

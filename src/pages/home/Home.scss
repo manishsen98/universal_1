@@ -32,7 +32,7 @@
 }
 
 .owner-section {
-  // height: 125vh;
+  height: 120vh;
   position: relative;
   background-image: url("/ownerBgImg.png");
   background-repeat: no-repeat;
@@ -43,16 +43,19 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.151);
-  h1 {
-    text-align: center;
-    color: azure;
+}
+
+.owner-section-heading {
+  text-align: center;
+  color:brown;
+  font-family: "El Messiri", sans-serif;
+  font-size: 4rem;
+  padding-top: 4rem;
+  @include sm {
     font-size: 4rem;
-    padding-top: 4rem;
-    @include sm {
-      font-size: 4rem;
-    }
   }
 }
+
 .white-hr {
   border-top: 1px solid white;
   width: 40%;
@@ -83,11 +86,12 @@
     padding-bottom: 20px;
   }
   h4 {
-    color: #ffffff;
+    color: black;
     font-weight: bold;
     font-size: 2.3rem;
     margin-left: 25px;
     padding-top: 30px;
+    font-family: "El Messiri", sans-serif;
   }
   @include sm {
     p {
@@ -95,7 +99,7 @@
       font-size: 2rem;
     }
     h4 {
-      color: #ffffff;
+      color: black;
       font-weight: bold;
       margin-left: 0px;
     }
@@ -104,9 +108,14 @@
 
 //  our servies section
 .main-bg-services {
-  background-color: #6c938254;
-  background-size: cover;
-  // height: 120vh;
+  background-image: url("/serviesbg2.png");
+   height: 100vh;
+   background-size: cover;
+   .servies-opcity{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.176);
+   }
   h1 {
     text-align: center;
     font-weight: bold;

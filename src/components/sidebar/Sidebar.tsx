@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import ToggleBtn from "./ToggleBtn";
 import "./Sidebar.scss";
 import { motion, transform } from "framer-motion";
 import { Link } from "react-router-dom";
+import NavData from "../header/NavData";
+import { FaChevronDown } from "react-icons/fa";
 
 const Sidebar = () => {
-  const [open, setOpen] = React.useState(false);
-
+  const [open, setOpen] = useState(false);
+  const [navOpen , setNavOpen] = useState("close")
   const variants = {
     open: { clipPath: "circle(120rem)" },
     closed: {
@@ -44,9 +46,9 @@ const Sidebar = () => {
       opacity: 0,
     },
   };
-  const links = ["About", "Skills", "Projects", "Education"];
+
   return (
-    <aside className={``}>
+    <aside>
       <ToggleBtn setOpen={setOpen} open={open} />
       <motion.div
         className={`sidebar ${open ? "open" : ""} `}
@@ -54,16 +56,23 @@ const Sidebar = () => {
         animate={open ? "open" : "closed"}
       >
         <motion.div className="links" variants={linkVariants}>
-          {links.map((item, index) => (
-            <motion.a
-              href={`#${item}`}
+          {NavData.map((item, index) => (
+            <motion.span
+            className="navroutes grid grid-cols-2 justify-items-center items-center gap-3"
               key={`${index}`}
               variants={itemVariants}
-              whileHover={{ scale: 1.3 }}
+              // whileHover={{ scale: 1.3 }}
               whileTap={{ scale: 0.9 }}
             >
-              {item}
-            </motion.a>
+              <Link to={item.route}>{item.heading}</Link>
+              {item.subheadings && <button><FaChevronDown className={`transition-all ease-in-out duration-300 btn-${navOpen}`} onClick={()=>setNavOpen((prev)=>prev=='close'?"open":"close")}  /></button>}
+              <div className={`flex flex-col col-start-1 col-end-3 ${navOpen}`}>
+                {item.subheadings?.map((subitem)=>{
+              return <Link to={subitem.route}>{subitem.heading}</Link>
+               
+                })}
+              </div>
+            </motion.span>
           ))}
         </motion.div>
       </motion.div>
