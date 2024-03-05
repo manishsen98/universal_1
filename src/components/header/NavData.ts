@@ -10,7 +10,7 @@ const NavData = [
   },
   {
     heading: "Services",
-    route: "/services",
+    route: "#services",
     subheadings: [
       {
         heading: "Vastu",

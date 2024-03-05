@@ -1,8 +1,11 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 
 const Layout = () => {
+  const {pathname} = useLocation()
+  
+  console.log(location)
   return (
     <>
       <header>
@@ -14,9 +17,9 @@ const Layout = () => {
       <footer>
         <Footer />
       </footer>
-      <div className="button">
+      {pathname=="/" ? <div className="button">
         <button>Book a consultation now</button>
-      </div>
+      </div>: "" }
     </>
   );
 };

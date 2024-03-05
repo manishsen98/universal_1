@@ -42,10 +42,10 @@ const Home = () => {
       </div>
 
       {/* our servies section */}
-      <div className=" main-bg-services">
-       <div className="servies-opcity">
+      <div id="services" className=" main-bg-services h-[120rem] sm:h-[100vh] ">
+       <div className="servies-opcity  pt-[1.5rem]">
         <div className="h-full flex flex-col gap-[5rem] sm:gap-0 sm:flex-row justify-center items-center mr-[-5rem]">
-          <div className="flex">
+          <div className="flex  ">
             <AnimateImage>
               <img src="/our-ser.png" alt="Our Services" />
             </AnimateImage>

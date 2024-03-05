@@ -11,9 +11,13 @@
 }
 
 .review-container{
-    background-image: url("/review-bg3.png");
+    background-image: url("/client-background2.png");
+    background-blend-mode: lighten;
     background-size: cover;
-    height: 120vh;
+    height: 60vh;
+    @include md {
+      height: 120vh;
+    }
     margin: auto;
     // @include flexCenter(1rem);
     .owl-item{
@@ -21,67 +25,48 @@
     }
   }
 
-  .review-container-opcity{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.098);
+  
+ 
+.review-card{
+  width: 50rem;
+  height: 40rem;
+  background-color: #69CAFA;
+  .review-card-info{
+    border-radius: 12px;
   }
-
-  .review-card{
-    height: 70rem;
-    width: 60rem;
-    @include sm{
-        height: 50rem;
-        width: 40rem;
-    }
-    @include lg{
-        height: 45rem;
-        width: 30rem;
-    }
-    display: flex;
-    background-color: wheat;
-    img{
-        width: 1rem;margin: 1rem;
-    }
-    &-info{
-        flex: 1;
-        h2{
-            font-size: 4.5rem;
-            color:brown;
-            margin: 1rem;
-            @include sm{
-                font-size: 3.1rem;
-            }
-            @include lg{
-                font-size: 2.5rem;
-            }
-        }
-        p{
-            font-size: 2.5rem;
-            margin: 1rem;
-            color: black;
-            font-weight: 400;
-            @include sm{
-                font-size: 1.7rem;
-            }
-            @include lg{
-                font-size: 1.4rem;
-            }
-        }
-        h3{
-            font-size: 4rem;
-            font-weight: bold;
-            color: brown;
-            margin: 4rem 1rem;
-            @include sm{
-                font-size: 3rem;
-            } 
-            @include lg{
-                font-size: 2.2rem;
-            } 
-        }
+  p{
+    margin-top: 5rem;
+    font-size: 1.5rem;
+  }
+  img{
+    border: 1rem solid white;
+    border-radius: 50%;
+    height: 30px !important;
+    width: 30px !important;
+    @include md {
+      height: 70px !important;
+      width: 70px !important;
     }
   }
+  .upper{
+    margin: -4rem;
+    &-1{
+    border-top-right-radius: 15px;
+      padding: 1.2rem;
+      h3{
+        font-size: 3rem;
+        @include md{
+          font-size: 2rem;
+        }
+      }
+      }
+      svg{
+        color: gold;
+        font-size: 1rem;
+      }
+    }
+  }
+  
 
   .custom-nav-btn {
     position: absolute;

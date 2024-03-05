@@ -64,11 +64,11 @@ const Sidebar = () => {
               // whileHover={{ scale: 1.3 }}
               whileTap={{ scale: 0.9 }}
             >
-              <Link to={item.route}>{item.heading}</Link>
+              {item.route=='#services'?<a href={item.route}>{item.heading}</a>: <Link to={item.route}>{item.heading}</Link>}
               {item.subheadings && <button><FaChevronDown className={`transition-all ease-in-out duration-300 btn-${navOpen}`} onClick={()=>setNavOpen((prev)=>prev=='close'?"open":"close")}  /></button>}
               <div className={`flex flex-col col-start-1 col-end-3 ${navOpen}`}>
                 {item.subheadings?.map((subitem)=>{
-              return <Link to={subitem.route}>{subitem.heading}</Link>
+              return <Link to={`/services${subitem.route}`}>{subitem.heading}</Link>
                
                 })}
               </div>

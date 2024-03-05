@@ -48,7 +48,7 @@ const OtherPage = () => {
 
       <div className="section-cards ">
         <div className="cards-container">
-          <div className="cards">
+          <div className="cards pb-[4rem] ">
             {ShowData.cards.map((item) => (
               <Card
                 key={item.id}
